@@ -1,0 +1,526 @@
+$primary-color: #5552FF;
+$secondary-color: #FFFFFF;
+$border: 2px solid #5552FF;
+$border-radius: 50px;
+$border-radius-2: 25px;
+$box-shadow: 0px 0px 0px 2px $primary-color;
+$box-shadow-2: 0px 0px 0px 2px $secondary-color;
+$mt-sc: 160px;
+$mt-sc-2: 80px;
+$mt-sc-3: 40px;
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+*{
+    font-family: 'Anybody', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 96px;
+}
+#nav__logo{
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    color: #5552FF;
+}
+input{
+    display: none;
+}
+label{
+    color: $secondary-color;
+    background-color: $primary-color;
+    border-radius: $border-radius;
+    padding: .5rem 1rem;
+    height: 49px;
+    display: none;
+    font-size: 24px;
+    margin-top: 7px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style: none;
+        display: inline;
+        margin: 0 .5rem;
+        a{
+            text-decoration: none;
+            color: #5552FF;
+            padding: 1rem 2rem;
+            border-radius: $border-radius;
+            &:hover{
+                background-color: $primary-color;
+                color: $secondary-color;
+            }
+        }
+    }
+}
+.nav__seccion-activa{
+    padding: 1rem 2rem;
+    background-color: $primary-color;
+    color: $secondary-color;
+    border-radius: $border-radius;
+}
+.secciones__teampeek{
+    padding: 1rem 2rem;
+    color: $primary-color;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+}
+h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: $primary-color;
+}
+.btn-1, .btn-2{
+    text-decoration: none;
+    padding: 1rem 2rem;
+}
+.btn-1{
+    background-color: $primary-color;
+    border-radius: $border-radius;
+    color: $secondary-color;
+}
+.btn-2{
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+    color: $primary-color;
+    &:hover{
+        background-color: $primary-color;
+        color: $secondary-color;
+    }
+}
+.card{
+    background-color: $primary-color;
+    border-radius: $border-radius-2;
+    border: none;
+    img{
+        height: 100px;
+        width: 100px;
+    }
+    h3, p{
+        color: $secondary-color;
+    }
+}
+.mt-sc{
+    margin-top: $mt-sc;
+}
+.mt-sc-2{
+    margin-top: $mt-sc-2;
+}
+.mt-sc-3{
+    margin-top: $mt-sc-3;
+}  
+.freelance{
+    &__text{
+        &__content{
+            padding: 5rem;
+            background-color: $primary-color;
+            border-radius: $border-radius;
+            background-color: $primary-color;
+        }
+    }
+    h2{
+        color: $secondary-color;
+        font-size: 24px;
+    }
+    p{
+        color: $secondary-color;
+        font-size: 19px;
+        text-align: justify;
+    }
+    a{
+        color: $secondary-color;
+    }
+    img{
+        border-radius: $border-radius;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.cuadro{
+    .estrella{
+        width: 3rem;
+    }
+    h3{
+        text-align: center;
+        color: $primary-color;
+        font-weight: 700;
+        font-size: 40px;
+    }
+    p{
+        text-align: center;
+        color: $primary-color;
+        font-size: 33px;
+    }
+}
+.footer{
+    background-color: $primary-color;
+    &__contenido{
+        padding: 4rem;
+    }
+    &__logo{
+        font-family: 'Kanit', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        color: $secondary-color;
+        margin: 0;
+    }
+    &__copy{
+        color: $secondary-color;
+        margin-bottom: 2rem;
+    }
+    &__redes{
+        padding: 1rem .75rem;
+        background-color: #FFFFFF;
+        border-radius: $border-radius;
+        margin: .5rem;
+    }
+}
+h3{
+    font-weight: 700;
+    color: $primary-color;
+}
+.cards-servicios{
+    margin-top: 24px;
+    gap: 1rem;
+    &__card{
+        width: 275px;
+        background-color: $primary-color;
+        color: $secondary-color;
+        border-radius: $border-radius;
+        padding: 3rem;
+        ul li{
+            display: block;
+        }
+        a{
+            padding: 1rem 3.3rem;
+            border-radius: $border-radius-2;
+            background-color: $secondary-color;
+            color: $primary-color;
+            text-decoration: none;
+        }
+    }
+}
+.busqueda{
+    padding: 1rem;
+    background-color: $primary-color;
+    border-radius: $border-radius;
+}
+.filtrar{
+    padding: 1rem;
+}
+.servicio{
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+    padding: .75rem 1rem;
+    color: $primary-color;
+    &__content{
+        h5{
+            font-weight: 700;
+            width: 230px;
+        }
+        .area{
+            width: 135px;
+        }
+        .precio{
+            width: 90px;
+        }
+        a{
+            text-decoration: none;
+            color: $secondary-color;
+            background-color: $primary-color;
+            border-radius: $border-radius;
+            padding: .75rem 1rem;
+        }
+    }
+}
+.teampeek__miembros{
+    gap: 1rem;
+    overflow: hidden;
+}
+.img-small{
+    box-shadow: $box-shadow;
+    border-radius: $border-radius-2;
+}
+.img-large{
+    /*esto es necesario para que no se deforme */
+    min-height: 346px;
+    max-height: 346px;
+    min-width: 311px;
+    max-width: 311px;
+    /**/
+    background-image: url(../img/equipo/teampeek-4.png);
+    border-radius: $border-radius;
+    border: $border;
+    &__cont{
+        background-color: $primary-color;
+        color: $secondary-color;
+        padding: 2rem;
+        border-radius: $border-radius;
+        margin-top: 155px;
+        ul{
+            gap: 0;
+            li{
+                margin: 0;
+                color: $primary-color;
+                padding: .5rem;
+                background-color: $secondary-color;
+                border-radius: $border-radius;
+            }
+        }
+        
+    }
+}
+.btn-teampeek__miembros{
+    gap: 1rem;
+    a{
+        padding: 1rem;
+        background-color: $primary-color;
+        border-radius: $border-radius;
+    }
+    .arrow-sig img{
+        rotate: 180deg;
+    }
+}
+.freel-bor-b{
+    margin: 1px 0;
+    border-bottom: $border;
+}
+details{
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    color: $primary-color;
+    &[open]{
+        border-radius: 40px;
+        box-shadow: $box-shadow;
+    }
+    summary{
+        background-color: $primary-color;
+        color: $secondary-color;
+        padding: 1.5rem;
+        border-radius: $border-radius;
+    }
+    .a-content{
+        padding: 1.5rem;
+        .perfil-freel{
+            border-radius: $border-radius;
+            margin-right: .5rem;
+        }
+        a{
+            padding: 1rem;
+            background-color: $primary-color;
+            border-radius: $border-radius;
+        }
+        h5{
+            width: 5rem;
+        }
+        .especialidad{
+            width: 12rem;
+        }
+    }
+}
+.nosotros{
+    color: $primary-color;
+}
+.txt-nosotros{
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 3rem;
+    border-radius: $border-radius;
+    font-size: 19px;
+}
+.nosotros-pregunta{
+    h3{
+        color: $primary-color;
+        text-align: center;
+    }
+}
+.teampeek-intro{
+    h2{
+        color: $primary-color;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+#nombre, #apellido, #email, #areas{
+    display: block;
+}
+#cv{
+    display: none;
+}
+.form{
+    padding: 4rem;
+    background-color: $primary-color;
+    color: $secondary-color;
+    border-radius: $border-radius;
+    input{
+        width: 100%;
+        background-color: $secondary-color;
+        padding: .5rem;
+        border: none;
+        border-radius: $border-radius;
+        &::placeholder{
+            padding: .5rem;
+            color: $primary-color;
+            opacity: 50%;
+        }
+        &::first-line{
+            padding: .5rem;
+        }
+    }
+    .redes{
+        gap: 1rem;
+        a{
+            background-color: $secondary-color;
+            border-radius: $border-radius;
+            align-items: center;
+        }
+        img{
+            padding: .5rem;
+        }
+    }
+    &__btn-1{
+        text-decoration: none;
+        padding: 1rem;
+        background-color: $secondary-color;
+        color: $primary-color;
+        border-radius: $border-radius;
+    }
+    &__btn-2{
+        text-decoration: none;
+        padding: 1rem;
+        color: $secondary-color;
+        box-shadow: $box-shadow-2;
+        border-radius: $border-radius;
+    }
+}
+.cvp-input{
+    &__content{
+        height: 20rem;
+        background-color: $secondary-color;
+        color: $primary-color;
+        border-radius: $border-radius-2;
+        a{
+            text-decoration: none;
+            padding: 1rem;
+            color: $secondary-color;
+            background-color: $primary-color;
+            border-radius: $border-radius;
+        }
+    }
+}
+.portfolio-p{
+    text-decoration: underline;
+    width: 8rem;
+    text-align: center;
+}
+@media (width<992px){
+    .checkbtn{
+        display: block;
+    }
+    .nav__secciones{
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: $secondary-color;
+        top: 96px;
+        left: -100%;
+        text-align: center;
+    }
+    .nav__seccion-activa{
+        background-color: #5552FF;
+        color: #FFF;
+        width: 100%;
+    }
+    nav ul li{
+        display: block;
+        margin: 48px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .intro{
+        margin-top: $mt-sc-2;
+        &__img{
+            margin-bottom: 2rem;
+        }
+        h1{
+            font-size: 32px;
+        }
+    }
+    .cards{
+        margin-top: $mt-sc-2;
+        .card{
+            margin: .5rem 0;
+        }
+    }
+    .flecha{
+        display: none;
+    }
+    .freelance{
+        margin-top: $mt-sc-2;
+        &__text__content{
+            padding: 3rem;
+        }
+    }
+    .teampeek-index{
+        margin-top: $mt-sc-2;
+    }
+    .cuadro{
+        margin-top: $mt-sc-2;
+    }
+    .footer{
+        margin-top: $mt-sc-2;
+        &__copy{
+            text-align: center;
+        }
+    }
+    .area{
+        display: none;
+    }
+    .combos{
+        margin-top: $mt-sc-3;
+    }
+    .servicio__content{
+        h5{
+            font-size: 16px;
+            width: 85px;
+        }
+        .area{
+            width: 135px;
+        }
+        .precio{
+            width: 90px;
+        }
+    }
+    .cards-servicios__card{
+        width: 100%;
+    }
+    .especialidad{
+        display: none !important;
+    }
+    .nosotros{
+        margin-top: $mt-sc-2;
+    }
+    .titulo-teampeek{
+        margin-top: $mt-sc-2;
+    }
+    .titulo-form{
+        margin-top: $mt-sc-2;
+    }
+    .form{
+        padding: 3rem;
+    }
+}
